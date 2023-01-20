@@ -8,3 +8,9 @@ rails generate migration AddUserRefToComments user:references user:index
 rails generate migration AddUserRefToLikes user:references user:index
 rails generate migration AddPostRefToComments post:references post:index
 rails generate migration AddPostRefToLikes post:references post:index
+
+Models
+rails generate model User name:string photo:text bio:text posts_counter:integer
+rails generate model Post title:string text:text comments_counter:integer likes_counter:integer
+rails generate model Comment text:text
+rails generate model Like
