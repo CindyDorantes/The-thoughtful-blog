@@ -1,5 +1,3 @@
-# Name must not be blank.
-# PostsCounter must be an integer greater than or equal to zero.
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
