@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  #tests go here
+  # tests go here
   subject { User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.') }
 
   before { subject.save }
@@ -37,5 +37,4 @@ RSpec.describe User, type: :model do
       expect(last_posts.length).to eq 3
     end
   end
-  
 end

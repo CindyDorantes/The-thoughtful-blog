@@ -1,16 +1,14 @@
-
-    # Title must not be blank.
-    # Title must not exceed 250 characters.
-    # CommentsCounter must be an integer greater than or equal to zero.
-    # LikesCounter must be an integer greater than or equal to zero.
-
+# Title must not be blank.
+# Title must not exceed 250 characters.
+# CommentsCounter must be an integer greater than or equal to zero.
+# LikesCounter must be an integer greater than or equal to zero.
 
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  #tests go here
+  # tests go here
   user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
-  subject { Post.new(user: user, title: 'Hello', text: 'This is my first post') }
+  subject { Post.new(user:, title: 'Hello', text: 'This is my first post') }
 
   before { subject.save }
 
@@ -53,15 +51,14 @@ RSpec.describe Post, type: :model do
 
   context 'Test user methods' do
     it 'returns last five comments' do
-      Comment.create(post: subject, user: user, text: 'Hi Tom!')
-      Comment.create(post: subject, user: user, text: 'Interesting')
-      Comment.create(post: subject, user: user, text: 'I dont agree')
-      Comment.create(post: subject, user: user, text: 'I would like to know more')
-      Comment.create(post: subject, user: user, text: 'Thanks for sharing')
-      Comment.create(post: subject, user: user, text: 'Is that all?')
+      Comment.create(post: subject, user:, text: 'Hi Tom!')
+      Comment.create(post: subject, user:, text: 'Interesting')
+      Comment.create(post: subject, user:, text: 'I dont agree')
+      Comment.create(post: subject, user:, text: 'I would like to know more')
+      Comment.create(post: subject, user:, text: 'Thanks for sharing')
+      Comment.create(post: subject, user:, text: 'Is that all?')
       last_comments = subject.last_five_comments
       expect(last_comments.length).to eq 5
     end
   end
-  
 end
