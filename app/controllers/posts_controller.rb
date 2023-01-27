@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   def index; end
 
-  def show; end
+  def show
+    params[:user_id]
+  end
 end
