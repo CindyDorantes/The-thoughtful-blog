@@ -1,1 +1,12 @@
-<h3>Here is the list of posts for a given USER</h3>
+<section>
+  <%= render partial: "shared/user-box", locals: { user: @user } %>
+  <% @posts.each do |post| %>
+    <%= render partial: "shared/post-preview", locals: { post: post, user: @user } %>
+
+    <div class="post-comments-preview">
+      <% post.last_five_comments.each do |comment| %>
+        <p><%=comment.user.name %>: <%=comment.text %></p>
+      <% end %>
+    </div>
+  <% end %>
+</section>
