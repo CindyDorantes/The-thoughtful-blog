@@ -1,1 +1,19 @@
-<h2>Here is the information for an individual USER</h2>
+<div>
+  <%= render partial: "shared/user-box", locals: { user: @user } %>
+</div>
+<div>
+  <p>
+    Bio
+  </p>
+  <p>
+    <%= @user.bio%>
+  </p>
+  <% @user.last_three_post.each do |post| %>
+    <%= render partial: "shared/post-preview", locals: { post: post, user: @user } %>
+  <% end %>
+  <%= link_to user_posts_path(@user) do %>
+    <div class="div-see-all">
+      <button type="button" class="btn-see-all">See all posts</button>
+    </div>
+  <% end %>
+</div>
