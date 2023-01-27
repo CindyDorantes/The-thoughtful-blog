@@ -1,1 +1,5 @@
-<h1>Here is a list of USERS</h1>
+<div class="users_container">
+  <% @users.each do |user| %>
+    <%= render partial: "shared/user-box", locals: { user: user } %>
+  <% end %>
+</div>
