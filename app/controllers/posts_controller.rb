@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   def new
     post = Post.new
     respond_to do |format|
-      format.html { render :new, locals: { post: post }  }
+      format.html { render :new, locals: { post: } }
     end
   end
 
@@ -20,19 +20,19 @@ class PostsController < ApplicationController
         # if question saves
         if post.save
           # success message
-          flash[:notice] = "New post saved successfully"
+          flash[:notice] = 'New post saved successfully'
           # redirect to index
           redirect_to user_posts_path(current_user.id)
         else
           # error message
           flash.now[:notice] = "Error: Couldn't create post"
           # render new
-          render :new, locals: { post: post }
+          render :new, locals: { post: }
         end
       end
     end
   end
-  
+
   def show
     @user = User.find(params[:user_id])
     @post = Post.find(params[:id])
