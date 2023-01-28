@@ -9,6 +9,7 @@
   </div>
 
   <div class="post-comments-preview">
+    <h4>Comments</h4>
     <% @post.comments.each do |comment| %>
       <p><%=comment.user.name %>: <%=comment.text %></p>
     <% end %>
