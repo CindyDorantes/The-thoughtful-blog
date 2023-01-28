@@ -13,6 +13,14 @@
   <body>
     <h1>Welcome to our blog</h1>
     <h2>Share your Thoughts</h2>
+
+    <% flash.each do |type, msg| %>
+      <div>
+        <%= msg %>
+      </div>
+    <% end %>
+
     <%= yield %>
+
   </body>
 </html>

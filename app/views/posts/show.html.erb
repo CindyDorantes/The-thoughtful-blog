@@ -6,9 +6,12 @@
       <span>Likes: <%= @post.likes_counter %></span>
     </p>
     <p><%= @post.text %></p>
+    <%= render "likes/new" %>
   </div>
 
   <div class="post-comments-preview">
+    <h4>Comments</h4>
+    <%=link_to 'Add Comment', new_user_post_comment_path(@user.id, @post.id) %>
     <% @post.comments.each do |comment| %>
       <p><%=comment.user.name %>: <%=comment.text %></p>
     <% end %>
