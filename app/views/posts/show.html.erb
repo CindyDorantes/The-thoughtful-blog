@@ -6,6 +6,7 @@
       <span>Likes: <%= @post.likes_counter %></span>
     </p>
     <p><%= @post.text %></p>
+    <%= render "likes/new" %>
   </div>
 
   <div class="post-comments-preview">
