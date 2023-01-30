@@ -1,6 +1,6 @@
 <section>
   <%= render partial: "shared/user-box", locals: { user: @user } %>
-  <% @posts.each do |post| %>
+  <% @user.posts.each do |post| %>
     <%= render partial: "shared/post-preview", locals: { post: post, user: @user } %>
 
     <div class="post-comments-preview">
