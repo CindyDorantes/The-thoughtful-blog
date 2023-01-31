@@ -5,8 +5,8 @@ RSpec.describe 'test User#show', type: :feature do
 
   before :each do
     @first_user = User.create(name: 'Tom',
-      photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      bio: 'Teacher from Mexico.')
+                              photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+                              bio: 'Teacher from Mexico.')
 
     @first_post = Post.create(user: @first_user, title: 'Welcome', text: 'This is my first post')
     @second_post = Post.create(user: @first_user, title: 'Hello again', text: 'This is my second post')
@@ -36,12 +36,12 @@ RSpec.describe 'test User#show', type: :feature do
 
     it 'can see the users first 3 posts' do
       expect(page).to have_tag('section') do
-        with_tag 'div', with: {class: 'user-post-preview'}, count: 3
+        with_tag 'div', with: { class: 'user-post-preview' }, count: 3
       end
     end
-    
+
     it 'can see a button that lets me view all of a users posts' do
-      expect(page).to have_tag('button', :with => {:class => 'btn-see-all'})
+      expect(page).to have_tag('button', with: { class: 'btn-see-all' })
     end
 
     it 'redirects me to that posts show page When I click a users post' do
