@@ -1,4 +1,4 @@
-<div>
+<section>
   <%= render partial: "shared/user-box", locals: { user: @user } %>
 </div>
 <%=link_to 'Add Post', new_user_post_path(@user.id) %>
@@ -17,4 +17,4 @@
       <button type="button" class="btn-see-all">See all posts</button>
     </div>
   <% end %>
-</div>
+</section>
