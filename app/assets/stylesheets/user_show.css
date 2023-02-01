@@ -1,0 +1,22 @@
+.user-show {
+  width: 100%;
+}
+
+.shared-user-box {
+  width: 100%;
+}
+
+.user-info {
+  width: 100%;
+}
+
+.user-bio {
+  border: 1px solid #2e4453;
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.user-bio h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

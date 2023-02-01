@@ -1,0 +1,23 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2e4453;
+}
+
+.root-header {
+  padding: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* color: #2e4453; */
+}
+
+.users_container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.users_container a {
+  width: 100%;
+}

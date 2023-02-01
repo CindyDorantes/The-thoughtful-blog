@@ -11,8 +11,10 @@
   </head>
 
   <body>
-    <h1>Welcome to our blog</h1>
-    <h2>Share your Thoughts</h2>
+    <nav>
+      <h1>The Thoughtful Blog.</h1>
+      <%= link_to "Home", root_path %>
+    </nav>
 
     <% flash.each do |type, msg| %>
       <div>
