@@ -191,6 +191,13 @@ Example:
 - Twitter: [@CindyDorantes10](https://twitter.com/CindyDorantes10)
 - LinkedIn: [Cindy Melisa Dorantes Sánchez](https://www.linkedin.com/in/cindydorantessanchez/)
 
+👤 **Shedrack Sunday**
+
+- GitHub: [@Shedrack-Sunday](https://github.com/Shedrack-Sunday)
+- Twitter: [@DeleSundayS](https://twitter.com/DeleSundayS)
+- LinkedIn: [Shedrack Sunday](https://www.linkedin.com/in/Shedrack-Sunday)
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

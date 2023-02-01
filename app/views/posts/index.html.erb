@@ -5,8 +5,11 @@
 
     <div class="post-comments-preview">
       <% post.last_five_comments.each do |comment| %>
-        <p><%=comment.user.name %>: <%=comment.text %></p>
+        <p class="comment"><%=comment.user.name %>: <%=comment.text %></p>
       <% end %>
     </div>
   <% end %>
+  <div class="pagination">
+      <button type="button" class="btn-see-all">Pagination</button>
+    </div>
 </section>
