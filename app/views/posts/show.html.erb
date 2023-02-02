@@ -25,6 +25,11 @@
     <br>
     <% @post.comments.each do |comment| %>
       <p><%=comment.user.name %>: <%=comment.text %></p>
+      <% if can? :destroy, comment %>
+      <%= form_with model: Comment, url: user_post_comment_path(@user, @post, comment.id), method: :delete do |form| %>
+        <%= form.submit "Delete comment", class: "see" %>
+      <% end %>
+    <% end %>
     <% end %>
   </div>
 </section>
