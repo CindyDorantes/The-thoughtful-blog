@@ -17,11 +17,6 @@
       <%= link_to "Log In", new_user_session_path %>
     </nav>
 
-    <% flash.each do |type, msg| %>
-      <div>
-        <%= msg %>
-      </div>
-    <% end %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
