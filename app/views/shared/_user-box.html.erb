@@ -1,9 +1,9 @@
 <%= link_to user_path(user.id) do %> 
   <div class="user_box">
     <div class="user_pic">
-      <% user.photo do %>
+      <%# <% user.photo do %>
         <div class="img_div"><%= image_tag user.photo %></div>
-      <% end %> 
+      <%# <% end %>
     </div>
     <div class="user_data">
       <h2><%= user.name %></h2>
