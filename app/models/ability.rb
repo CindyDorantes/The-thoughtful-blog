@@ -12,6 +12,7 @@ class Ability
     return unless user.role == 'admin' # additional permissions for administrators
 
     can :manage, Post
+    can :manage, Comment
 
     # Define abilities for the user here. For example:
     #
