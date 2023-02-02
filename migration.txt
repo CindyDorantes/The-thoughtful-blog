@@ -15,6 +15,8 @@ rails generate model Post title:string text:text comments_counter:integer likes_
 rails generate model Comment text:text
 rails generate model Like
 
+rails generate migration add_column_to_users role:string
+
 Data
 first_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
 second_user = User.create(name: 'Lilly', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Poland.')
