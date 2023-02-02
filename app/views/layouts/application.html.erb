@@ -11,14 +11,15 @@
   </head>
 
   <body>
-    <h1>Welcome to our blog</h1>
-    <h2>Share your Thoughts</h2>
+    <nav>
+      <h1>The Thoughtful Blog.</h1>
+      <%= link_to "Home", root_path %>
+      <%= link_to "Log In", new_user_session_path %>
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete  %>
+    </nav>
 
-    <% flash.each do |type, msg| %>
-      <div>
-        <%= msg %>
-      </div>
-    <% end %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
     <%= yield %>
 

@@ -1,0 +1,45 @@
+.user_box {
+  text-decoration: none;
+  display: flex;
+
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  width: 100%;
+}
+
+.user_pic {
+  width: 10em;
+  height: 10em;
+  padding: 0.5rem;
+  border: 1px solid #2e4453;
+  border-radius: 5px;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_pic img {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.user_data {
+  width: calc(100% - (10em + 2em + 2em));
+  border: 1px solid #2e4453;
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.user_data h2 {
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.user_data p {
+  text-align: right;
+}

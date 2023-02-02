@@ -1,5 +1,8 @@
-<div class="users_container">
-  <% @users.each do |user| %>
-    <%= render partial: "shared/user-box", locals: { user: user } %>
-  <% end %>
-</div>
+<section>
+  <h2 class="root-header">Welcome to our blog. Share your Thoughts.</h2>
+  <div class="users_container">
+    <% @users.each do |user| %>
+      <%= render partial: "shared/user-box", locals: { user: user } %>
+    <% end %>
+  </div>
+</section>

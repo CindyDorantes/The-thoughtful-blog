@@ -1,0 +1,18 @@
+.user-post-preview {
+  width: calc(100% - 2rem);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #2e4453;
+  border-radius: 5px;
+}
+
+.user-post-preview h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.post-data {
+  width: 100%;
+  text-align: right;
+  color: gray;
+  font-size: small;
+}
