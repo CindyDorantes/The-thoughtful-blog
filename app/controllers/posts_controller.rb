@@ -37,4 +37,9 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @post = Post.includes(comments: [:user]).find(params[:id])
   end
+
+  def destroy
+    @post = Post.find(params[:id]).destroy
+    redirect_to user_path(current_user.id), notice: 'Post deleted successfully'
+  end
 end
