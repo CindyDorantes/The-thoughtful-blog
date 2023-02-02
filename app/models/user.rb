@@ -12,5 +12,4 @@ class User < ApplicationRecord
   def last_three_post
     posts.last(3)
   end
-
 end
