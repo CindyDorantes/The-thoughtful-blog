@@ -1,6 +1,7 @@
 .user_box {
   text-decoration: none;
   display: flex;
+
   /* flex-wrap: wrap; */
   flex-direction: row;
   width: 100%;

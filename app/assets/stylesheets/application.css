@@ -13,13 +13,13 @@
  *= require_tree .
  *= require_self
  */
- * {
+* {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
+}
 
- nav {
+nav {
   width: calc(100% - 3em);
   display: flex;
   flex-wrap: wrap;
@@ -31,9 +31,9 @@
   background-color: #0675c4;
   color: whitesmoke;
   font-family: Georgia, 'Times New Roman', Times, serif;
- }
+}
 
- a {
+a {
   text-decoration: none;
   color: inherit;
- }
+}

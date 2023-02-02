@@ -3,7 +3,7 @@
   padding: 2rem 5rem;
   border: 1px solid #2e4453;
   border-radius: 5px;
-  box-shadow: 3px 3px 10px 4px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
 .field {
@@ -17,7 +17,7 @@
   background-color: #0675c4;
   border-radius: 6px;
   border-width: 0;
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -36,5 +36,5 @@
 .links {
   margin: 2rem;
   text-align: center;
-  color: #5d6d7e ;
+  color: #5d6d7e;
 }
