@@ -1,22 +1,80 @@
 .user-show {
   width: 100%;
+  padding: 0 0 2rem 0;
 }
 
 .shared-user-box {
+  width: calc(100% - 10rem);
+  display: flex;
+  justify-content: center;
+}
+
+.shared-user-box a {
   width: 100%;
 }
 
 .user-info {
-  width: 100%;
+  width: calc(100% - 10rem);
+  margin: 0 5rem;
+}
+
+.btn-add-post {
+  background-color: lightgrey;
+  appearance: button;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #2e4453;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 10px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0.75rem 25px;
+  position: relative;
+  text-align: center;
+  width: 20%;
 }
 
 .user-bio {
   border: 1px solid #2e4453;
   border-radius: 5px;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 2rem 0.5rem;
   padding: 0.5rem;
 }
 
 .user-bio h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.div-see-all {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-see-all {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #0675c4;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  width: 50%;
 }

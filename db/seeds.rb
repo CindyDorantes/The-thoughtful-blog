@@ -14,7 +14,7 @@ first_user = User.create(email: 'tom@gmail.com', password: '123abc', name: 'Tom'
 second_user = User.create(email: 'lilly@gmail.com', password: '123abc', name: 'Lilly', photo: 'https://images.unsplash.com/photo-1665686310934-8fab52b3821b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
   bio: 'Teacher from Poland.')
 User.create(name: 'Cindy', email: 'cindy@gmail.com', password: '123abc', bio: 'The blog Creator',
-    photo: 'https://picsum.photos/200')
+    photo: 'https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=785&q=80')
 
 first_post = Post.create(user: first_user, title: 'Hello', text: 'This is my first post')
 second_post = Post.create(user: first_user, title: 'Hello hello', text: 'This is my second post')

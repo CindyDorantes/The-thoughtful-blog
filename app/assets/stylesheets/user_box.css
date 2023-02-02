@@ -24,7 +24,7 @@
 }
 
 .user_data {
-  width: 70%;
+  width: calc(100% - (10em + 2em + 2em));
   border: 1px solid #2e4453;
   border-radius: 5px;
   margin: 0.5rem;

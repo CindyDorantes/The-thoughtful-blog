@@ -2,7 +2,7 @@
   <div class="shared-user-box">
     <%= render partial: "shared/user-box", locals: { user: @user } %>
   </div>
-  <%=link_to 'Add Post', new_user_post_path(@user.id) %>
+  <%=link_to 'Add Post', new_user_post_path(@user.id), class:"btn-add-post" %>
   <div class="user-info">
     <div class="user-bio">
       <h3>
