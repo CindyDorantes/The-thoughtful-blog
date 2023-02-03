@@ -8,6 +8,13 @@
     <p><%= @post.text %></p>
     <br>
     <%= render "likes/new" %>
+    
+    <% if can? :destroy, @post %>
+      <%= form_with model: Post, url: user_post_path(@user, @post), method: :delete do |form| %>
+        <%= form.submit "Delete Post", class: "see" %>
+      <% end %>
+    <% end %>
+    
   </div>
 
   <div class="user-post-preview">
@@ -18,6 +25,11 @@
     <br>
     <% @post.comments.each do |comment| %>
       <p><%=comment.user.name %>: <%=comment.text %></p>
+      <% if can? :destroy, comment %>
+      <%= form_with model: Comment, url: user_post_comment_path(@user, @post, comment.id), method: :delete do |form| %>
+        <%= form.submit "Delete comment", class: "see" %>
+      <% end %>
+    <% end %>
     <% end %>
   </div>
 </section>
