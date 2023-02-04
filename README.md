@@ -76,7 +76,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [] In developement.......
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,21 +183,9 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- Controllers specs.
-- Creating a data model.
-- Processing data in models.
-- Views.
-- Forms
-- Validations, Model specs, and n+1 problems.
-- Add Devise.
-- Add authorization rules.
-- Integration specs for Views.
-- Add API endpoints.
-<!-- - [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
--->
+- Add API endpoints documentaion 
+- Process for external view.
+- Add recomendation system 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
