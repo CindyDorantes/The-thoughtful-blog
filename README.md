@@ -1,26 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-Modify this file to match your project and remove sections that don't apply.
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-OPTIONAL SECTIONS:
-- FAQ
-After you're finished please remove all the comments and instructions!
--->
-
 
 <!-- TABLE OF CONTENTS -->
 
@@ -81,14 +60,13 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<!-- Features 
+ 
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Post and comment creation]**
+- **[Unique user loin]**
+- **[Html and json reddering of data]**
 -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
