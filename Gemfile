@@ -13,6 +13,8 @@ gem 'cancancan'
 
 gem 'devise'
 
+gem 'active_model_serializers'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
